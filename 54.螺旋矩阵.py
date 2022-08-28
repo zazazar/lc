@@ -3,8 +3,8 @@
 #
 # [54] 螺旋矩阵
 #
-from typing import List
 import math
+from typing import List
 
 # @lc code=start
 
@@ -68,6 +68,6 @@ if __name__ == '__main__':
         [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]])
     q = sol.spiralOrder(
         [[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12], [13, 14, 15, 16, 17, 18]])
-    p = sol.spiralOrder([[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15],[16,17,18]])
-    c = sol.spiralOrder([[1,2,3],[4,5,6],[7,8,9]])
+    p = sol.spiralOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]])
+    c = sol.spiralOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
     print(x)

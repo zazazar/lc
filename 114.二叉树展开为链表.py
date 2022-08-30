@@ -12,18 +12,19 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 class Solution:
     def __init__(self):
         self.a = []
+
     def flatten(self, root: TreeNode) -> None:
         """
         Do not return anything, modify root in-place instead.
         """
-        def preOrder(root): 
+        def preOrder(root):
             if not root:
                 return
             self.a.append(root)
             preOrder(root.left)
             preOrder(root.right)
         print(self.a)
-

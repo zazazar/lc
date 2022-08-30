@@ -102,39 +102,47 @@
 # visited = [False] * len(strs)
 
 
-def dfs(path):
-    global res
-    if len(path) == len(S):
-        if path == S and visited == [True]*len(strs):
-            res += 1
-        return
-    p = len(path)
-    if path != S[:p]:
-        return
-    for i in range(len(strs)):
-        if i >= 1 and strs[i] == strs[i-1] and not visited[i-1]:
-            continue
-        if not visited[i]:
-            visited[i] = True
-            dfs(path + strs[i])
-            visited[i] = False
+# def dfs(path):
+#     global res
+#     if len(path) == len(S):
+#         if path == S and visited == [True]*len(strs):
+#             res += 1
+#         return
+#     p = len(path)
+#     if path != S[:p]:
+#         return
+#     for i in range(len(strs)):
+#         if i >= 1 and strs[i] == strs[i-1] and not visited[i-1]:
+#             continue
+#         if not visited[i]:
+#             visited[i] = True
+#             dfs(path + strs[i])
+#             visited[i] = False
 
 
-visited = [False] * len(strs)
-if n == sum(X):
-    dfs('')
-print(res)
+# visited = [False] * len(strs)
+# if n == sum(X):
+#     dfs('')
+# print(res)
 
+# n, m = map(int, input().split())
+# S = input()
+# input()
+# s = list()
+# piece = list()
+# while True:
+#     try:
+#         piece.append(input())
+#     except:
+#         break
+
+# 徐天一  17: 53: 21
 n, m = map(int, input().split())
 S = input()
-input()
+num = len(list(map(int, input().split())))
 s = list()
-piece = list()
-while True:
-    try:
-        piece.append(input())
-    except:
-        break
+for _ in range(num):
+    s.append(input())
 
 
 def solution(S, s, m):
